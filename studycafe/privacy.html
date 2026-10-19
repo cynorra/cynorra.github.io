@@ -26,7 +26,7 @@
 
   <h2>1. Data we process</h2>
   <ul>
-    <li><strong>Account data (optional):</strong> if you create an account, Firebase Authentication processes your email address and password (the password is handled by Firebase and is never visible to us), and we store the display name you choose.</li>
+    <li><strong>Account data (optional):</strong> if you create an account, Firebase Authentication processes your email address and password (the password is handled by Firebase and is never visible to us), and we store the display name you choose. If you sign in with Google, Google Sign-In gives us your name and email address, which we store in the same way; we do not receive your Google password or profile photo.</li>
     <li><strong>Progress data:</strong> points, study minutes, daily streak and longest streak. Stored on your device, and, if you have an account, in Cloud Firestore.</li>
     <li><strong>Leaderboard:</strong> if you have an account, your display name and points are shown to other users on the leaderboard.</li>
     <li><strong>Study sessions and settings:</strong> your session history, timer settings, unlocked cafe items and achievements are stored locally on your device.</li>
