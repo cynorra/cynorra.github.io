@@ -29,16 +29,19 @@
     <li><strong>Hesap verileri (isteğe bağlı):</strong> Hesap oluşturursanız Firebase Authentication e-posta adresinizi ve şifrenizi işler (şifre Firebase tarafından işlenir, bize görünmez) ve seçtiğiniz görünen adı saklarız. Google ile giriş yaparsanız Google Sign-In bize adınızı ve e-posta adresinizi verir; bunları aynı şekilde saklarız. Google şifrenizi veya profil fotoğrafınızı almayız.</li>
     <li><strong>İlerleme verileri:</strong> puanlar, çalışma dakikaları, günlük seri ve en uzun seri. Cihazınızda, hesabınız varsa ayrıca Cloud Firestore&rsquo;da saklanır.</li>
     <li><strong>Liderlik tablosu:</strong> hesabınız varsa görünen adınız ve puanlarınız diğer kullanıcılara liderlik tablosunda gösterilir. Kullanıcılar bir oyuncuyu bildirebilir (bildirenin ve bildirilen oyuncunun hesap kimliklerini, nedeni ve zamanı saklarız) ya da bir oyuncuyu gizleyebilir (yalnızca bildirenin cihazında saklanır).</li>
+    <li><strong>Davet kodları:</strong> hesabınız varsa size 6 karakterlik bir davet kodu oluştururuz. Bir arkadaşınızın kodunu girerseniz, ikinizin de bir kez bonus puan alabilmesi için bir davet kaydı saklarız (hesap kimliğiniz, arkadaşınızın hesap kimliği, kod, ödülün alınıp alınmadığı ve zaman).</li>
+    <li><strong>Odak durumu (isteğe bağlı, varsayılan kapalı):</strong> Ayarlar&rsquo;dan odak durumunu göstermeyi açarsanız, odak seansı sürerken görünen adınızı ve seansın bitiş zamanını saklarız; giriş yapmış diğer kullanıcılar bunu görebilir. Seansı duraklattığınızda, sıfırladığınızda veya bitirdiğinizde, ayarı kapattığınızda, çıkış yaptığınızda ve hesabınızı sildiğinizde kaldırılır.</li>
+    <li><strong>İkramlar:</strong> giriş yapmış kullanıcılar, odak durumu açık birine hazır bir ikram (kahve, çay veya pasta; serbest metin yok) gönderebilir. Gönderenin hesap kimliğini ve görünen adını, alıcının hesap kimliğini, ikramı, 10 dakikalık zaman dilimini ve zamanı saklarız. Yalnızca alıcı okuyabilir; alıcı göndereni gizleyebilir veya bildirebilir, ikramları okundu işaretleyebilir ya da silebilir.</li>
     <li><strong>Çalışma seansları ve ayarlar:</strong> seans geçmişiniz, zamanlayıcı ayarlarınız, açtığınız kafe öğeleri ve başarımlar yalnızca cihazınızda saklanır.</li>
     <li><strong>Reklam verileri:</strong> uygulama Google AdMob aracılığıyla banner, geçiş, yerel ve ödüllü reklamlar gösterir. AdMob cihazınızın reklam kimliğini, IP adresinizi ve temel cihaz ve kullanım bilgilerini işleyebilir.</li>
     <li><strong>Analiz ve çökme verileri:</strong> Firebase Analytics ve Firebase Crashlytics, sorunları gidermek ve uygulamayı geliştirmek için anonim kullanım olayları, uygulama örnek kimlikleri, cihaz modeli, işletim sistemi sürümü ve çökme raporları toplar. Firebase Remote Config zamanlayıcı ve ödül ayarlarını getirir.</li>
-    <li><strong>Bildirimler:</strong> izin verirseniz seans sonu hatırlatıcısı yalnızca cihazınızda planlanır. Bunun için sunucuya anlık bildirim anahtarı veya başka veri gönderilmez.</li>
+    <li><strong>Bildirimler:</strong> izin verirseniz seans sonu hatırlatıcısı yalnızca cihazınızda planlanır. Bunun için sunucuya anlık bildirim anahtarı veya başka veri gönderilmez. Aldığınız ikramlar uygulama içinde görünür (uygulama açıkken küçük bir mesaj ve zil simgesinin arkasında bir gelen kutusu); anlık bildirim (push) göndermeyiz.</li>
   </ul>
 
   <h2>2. Verileri nasıl kullanıyoruz</h2>
   <ul>
     <li>zamanlayıcıyı çalıştırmak, ilerlemenizi takip etmek ve oturumunuzu açık tutmak;</li>
-    <li>liderlik tablosunu göstermek;</li>
+    <li>liderlik tablosunu göstermek, davet bonuslarını vermek ve açarsanız başkalarının odak durumunuzu görmesini ve size ikram göndermesini sağlamak;</li>
     <li>reklam göstermek ve AdMob&rsquo;un çalışmasını sağlamak;</li>
     <li>kullanımı ölçmek, çökmeleri düzeltmek ve uygulamayı geliştirmek.</li>
   </ul>
@@ -50,7 +53,7 @@
   <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve benzeri bölgelerde ilk açılışta Google&rsquo;ın onay formu gösterilir; kişiselleştirilmiş reklamlar için rızanızı bu formda verir veya reddedebilirsiniz. Seçiminizi uygulamadaki <em>Ayarlar &rarr; Reklam gizlilik ayarları</em> bölümünden (form gerekli olan bölgelerde) istediğiniz zaman değiştirebilirsiniz. Reklam kimliğinizi sıfırlayabilir veya silebilirsiniz: <em>Android Ayarlar &rarr; Gizlilik &rarr; Reklamlar</em>.</p>
 
   <h2>5. Saklama ve silme</h2>
-  <p>Hesabınız var olduğu sürece hesap verilerinizi saklarız. Hesabınızı ve bulut verilerinizi istediğiniz zaman uygulamadan (<em>Profil &rarr; Hesabı Sil</em>) veya <a href="delete-account-tr.html">bu sayfadaki</a> adımlarla silebilirsiniz. Yalnızca cihazınızda saklanan veriler uygulamayı kaldırdığınızda silinir.</p>
+  <p>Hesabınız var olduğu sürece hesap verilerinizi saklarız. Hesabınızı ve bulut verilerinizi istediğiniz zaman uygulamadan (<em>Profil &rarr; Hesabı Sil</em>) veya <a href="delete-account-tr.html">bu sayfadaki</a> adımlarla silebilirsiniz. Hesabınızı sildiğinizde profiliniz, liderlik tablosu kaydınız, odak durumunuz ve size gönderilen ikramlar silinir. Davet kodları ve davet kayıtları uygulamadan silinemez; yalnızca hesap kimlikleri içerir ve silme sonrası bir profile bağlı kalmaz. Sizin gönderdiğiniz ikramlar alıcı silene kadar onun gelen kutusunda kalır. Yalnızca cihazınızda saklanan veriler uygulamayı kaldırdığınızda silinir.</p>
 
   <h2>6. Güvenlik</h2>
   <p>Bulut verileri Google Firebase&rsquo;de, sektör standardı güvenlik önlemleri ve erişim kurallarıyla korunarak saklanır. İnternet üzerinden hiçbir aktarım %100 güvenli değildir.</p>
