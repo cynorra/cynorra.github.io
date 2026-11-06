@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="AWS Cloud Practitioner Study Guide (CLF-C02): Pass on Your First Try" style="background:#020617;font-family:'Plus Jakarta Sans',system-ui,sans-serif">
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base & Glow -->
+  <rect width="100%" height="100%" fill="#020617"/>
+  <rect width="100%" height="100%" fill="url(#glow)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Framing Border with Technical Reticles -->
+  <rect x="24" y="24" width="752" height="402" rx="12" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="28" y="28" width="744" height="394" rx="10" fill="none" stroke="#334155" stroke-width="0.5" stroke-dasharray="8 6"/>
+
+  <!-- Corner Alignment Marks -->
+  <path d="M 18 24 L 32 24 M 24 18 L 24 32" stroke="#0284c7" stroke-width="2.5"/>
+  <path d="M 782 24 L 768 24 M 776 18 L 776 32" stroke="#0284c7" stroke-width="2.5"/>
+  <path d="M 18 426 L 32 426 M 24 432 L 24 418" stroke="#0284c7" stroke-width="2.5"/>
+  <path d="M 782 426 L 768 426 M 776 432 L 776 418" stroke="#0284c7" stroke-width="2.5"/>
+
+  <!-- Top Badge -->
+  <rect x="56" y="52" width="266" height="26" rx="6" fill="#0284c7" opacity="0.16"/>
+  <rect x="56" y="52" width="266" height="26" rx="6" fill="none" stroke="#0284c7" stroke-width="1" opacity="0.4"/>
+  <circle cx="68" cy="65" r="3.5" fill="#0284c7"/>
+  <text x="78" y="69" fill="#0284c7" font-size="11" font-weight="800" letter-spacing="1.5" font-family="'JetBrains Mono', monospace">CLOUD &amp; INFRASTRUCTURE AUDIT</text>
+
+  <!-- Horizontal Tech Rule -->
+  <line x1="56" y1="96" x2="744" y2="96" stroke="#334155" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Main Title & Description -->
+  <text x="56" y="185" fill="#f8fafc" font-size="40" font-weight="900" letter-spacing="-1">AWS Cloud Practitioner</text>
+  <text x="56" y="235" fill="#f8fafc" font-size="40" font-weight="900" letter-spacing="-1">Study Guide (CLF-C02):</text>
+  <text x="56" y="285" fill="#f8fafc" font-size="40" font-weight="900" letter-spacing="-1">Pass on Your First Try</text>
+  <text x="56" y="345" fill="#94a3b8" font-size="15" font-family="'JetBrains Mono', monospace">A comprehensive syllabus breakdown, domain weight</text>
+  <text x="56" y="369" fill="#94a3b8" font-size="15" font-family="'JetBrains Mono', monospace">analysis, and 30-day tactical study plan to pass…</text>
+
+  <!-- Bottom Technical Footer Bar -->
+  <line x1="56" y1="384" x2="744" y2="384" stroke="#1e293b" stroke-width="1"/>
+  <text x="56" y="405" fill="#64748b" font-size="11" font-family="'JetBrains Mono', monospace" letter-spacing="1">GETSKILLROADMAP // VERIFIED AUDIT</text>
+  <text x="744" y="405" fill="#0284c7" font-size="11" font-weight="700" font-family="'JetBrains Mono', monospace" text-anchor="end">PROOF-OF-WORK STANDARD</text>
+</svg>
