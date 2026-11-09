@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account & Data Deletion Request - History Quiz Pro</title>
+<style>
+  :root {
+    --bg-dark: #0A0E17;
+    --card-bg: rgba(22, 29, 44, 0.85);
+    --gold-primary: #D4AF37;
+    --gold-secondary: #FFD700;
+    --text-white: #FFFFFF;
+    --text-secondary: #94A3B8;
+    --coral-error: #FF5252;
+    --emerald-success: #2ECC71;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    line-height: 1.6;
+    color: var(--text-white);
+    background-color: var(--bg-dark);
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+  }
+  h1 {
+    color: var(--gold-primary);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 16px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    color: var(--gold-secondary);
+    margin-top: 24px;
+  }
+  ul {
+    padding-left: 20px;
+    color: #CBD5E1;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .btn-delete {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF5252, #D32F2F);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 10px;
+    margin-top: 16px;
+    box-shadow: 0 4px 15px rgba(255, 82, 82, 0.4);
+    transition: transform 0.2s;
+  }
+  .btn-delete:hover {
+    transform: translateY(-2px);
+  }
+  .info-box {
+    background: rgba(46, 204, 113, 0.1);
+    border-left: 4px solid var(--emerald-success);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 0.92rem;
+  }
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+  a {
+    color: var(--gold-primary);
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>🗑️ Account & Data Deletion Request</h1>
+  <div class="subtitle">History Quiz Pro (Package: <code>com.cynorra.historyapp</code>)</div>
+
+  <p>In accordance with Google Play Developer Policies and Global Data Protection Regulations (GDPR & KVKK), users of <strong>History Quiz Pro</strong> have the right to request the complete deletion of their account and all associated personal and gameplay data.</p>
+
+  <h2>1. Deletion via In-App Options</h2>
+  <p>You can instantly delete your account and wipe your local and cloud data without waiting:</p>
+  <ul>
+    <li>Open <strong>History Quiz Pro</strong> on your device.</li>
+    <li>Navigate to the <strong>Profile (Profilim)</strong> tab.</li>
+    <li>Scroll down and tap <strong>"🗑️ Hesabımı ve Tüm Verilerimi Sil"</strong> (Delete Account & Reset Data).</li>
+    <li>Confirm the prompt. Your Google account link, stats, achievements, and leaderboard entries will be deleted immediately.</li>
+  </ul>
+
+  <h2>2. Deletion Request via Web / Email</h2>
+  <p>If you no longer have the app installed or prefer to request deletion via web, you can submit your request directly by emailing our support team:</p>
+
+  <a class="btn-delete" href="mailto:eren.gp54@gmail.com?subject=History%20Quiz%20Pro%20Account%20Deletion%20Request&body=Hello%20Cynorra%20Support,%0A%0AI%20would%20like%20to%20request%20the%20permanent%20deletion%20of%20my%20History%20Quiz%20Pro%20account%20and%20data.%0A%0AAccount%20Email%20/%20Google%20Account:%20[Insert%20Your%20Email%20Here]%0APlayer%20Username:%20[Insert%20Your%20In-Game%20Username]%0A%0AThank%20you.">
+    ✉️ Submit Account Deletion Request via Email
+  </a>
+
+  <h2>3. What Data Will Be Deleted?</h2>
+  <p>Upon receiving your request, the following data associated with your account will be permanently erased within 30 days:</p>
+  <ul>
+    <li>Google Authentication credentials & profile ID.</li>
+    <li>Firestore Leaderboard rankings, total score, and correct/wrong stats.</li>
+    <li>Current daily streak and unlocked career achievements.</li>
+    <li>Firebase Push notification tokens.</li>
+  </ul>
+
+  <div class="info-box">
+    ✅ <strong>Data Retention Policy:</strong> Anonymized, aggregated app analytics (such as total quizzes played across all users) that cannot be linked back to your identity may be retained for technical statistics.
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Cynorra — History Quiz Pro. All rights reserved.<br>
+  <a href="privacy-policy.html">Return to Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
