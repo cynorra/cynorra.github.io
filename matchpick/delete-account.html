@@ -177,7 +177,7 @@
   <div class="card">
     <h2>2. What Data Is Deleted?</h2>
     <ul>
-      <li><strong>Authentication Profile:</strong> Your Google Sign-In UID, email address, display name, and avatar image link stored in Firebase Authentication.</li>
+      <li><strong>Authentication Profile:</strong> Your account UID, email address (Google Sign-In or email/password), display name, and avatar image link stored in Firebase Authentication. Guest (anonymous) sessions contain no personal data and are removed together with your data.</li>
       <li><strong>Predictions &amp; Scores:</strong> All match predictions submitted by your account, points earned, streak milestones, and referral association.</li>
       <li><strong>Community Contributions:</strong> All posts, comments, and like interactions published by your UID in the Community Feed.</li>
       <li><strong>Leaderboard Presence:</strong> Your profile is immediately and permanently removed from all global and regional rank leaderboards.</li>
@@ -194,7 +194,7 @@
 
     <form id="deletionForm" onsubmit="handleDeletion(event)">
       <div class="form-group">
-        <label for="userEmail">Account Email Address (Google Sign-In Email)</label>
+        <label for="userEmail">Account Email Address (the email you signed in with)</label>
         <input type="email" id="userEmail" required placeholder="e.g. analyst@example.com">
       </div>
 
